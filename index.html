@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <title>Survey Form Demo</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form Demo Project</h1>
+            <p id="description">This is a sample survey form!</p>
+            <p id="description">This can be changed to fit many uses</p>
+        </header>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" 
+            for="name">Name</label>
+            <input type="text" 
+            name="name" 
+            id="name" 
+            class="form-control" 
+            placeholder="Enter your name" 
+            required>
+        </div>
+        
+        <div class="form-group">
+            <label id="email-label" 
+            for="email">Email</label>
+            <input type="email" 
+            name="email"
+            id="email" 
+            class="form-control" 
+            placeholder="Enter your email" 
+            required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" 
+            for="number">Age
+            <span class="clue">(optional)</span></label>
+            <input type="number" 
+            name="age" 
+            id="number" 
+            min="18" 
+            max="99" 
+            class="form-control" 
+            placeholder="Age:">
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your current position?</p>
+            <select id="dropdown" 
+            name="role" 
+            class="form-control" 
+            required>
+                <option disabled selected value>Select current position</option>
+                <option value="student">Student</option>
+                <option value="job">Full-Time Job</option>
+                <option value="learner">Full-Time Learner</option>
+                <option value="preferNo">Prefer not to answer</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend hiring Nick Zamboni?</p>
+            <label>
+                <input name="user-recommend" 
+                value="definitely" 
+                type="radio" 
+                class="input-radio">
+                Definitely
+            </label>
+            <label>
+                <input name="user-recommend" 
+                value="maybe" 
+                type="radio" 
+                class="input-radio">
+                Maybe
+            </label>
+            <label>
+                <input name="user-recommend"
+                value="yes"
+                type="radio"
+                class="input-radio">
+                Yes
+            </label>    
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite food?</p>
+            <select id="most-like" 
+            name="mostLike" 
+            class="form-control" 
+            required>
+                <option disabled selected value>Select an option</option>
+                <option value="pasta">Pasta</option>
+                <option value="tacos">Tacos</option>
+                <option value="breakfastFood">Breakfast Food</option>
+                <option value="asian">Asian</option>
+                <option value="kabobs">Kabobs</option>
+                <option value="else">Something else</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite programming language?
+            <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input name="prefer" 
+                value="python" 
+                type="checkbox" 
+                class="input-checkbox">
+                Python
+            </label>
+            <label>
+                <input name="prefer" 
+                value="hmtl" 
+                type="checkbox" 
+                class="input-checkbox">
+                Html
+            </label>
+            <label>
+                <input name="prefer" 
+                value="css" 
+                type="checkbox" 
+                class="input-checkbox">
+                CSS
+            </label>
+            <label>
+                <input name="prefer" 
+                value="javaScript" 
+                type="checkbox" 
+                class="input-checkbox">
+                JavaScript
+            </label>
+            <label>
+                <input name="prefer" 
+                value="sql" 
+                type="checkbox" 
+                class="input-checkbox">
+                SQL
+            </label>
+            <label>
+                <input name="prefer" 
+                value="c++" 
+                type="checkbox" 
+                class="input-checkbox">
+                C++
+            </label>
+            <label>
+                <input name="prefer" 
+                value="basic" 
+                type="checkbox" 
+                class="input-checkbox">
+                Basic
+            </label>
+            <label>
+                <input name="prefer" 
+                value="somethingElse" 
+                type="checkbox" 
+                class="input-checkbox">
+                Something Else
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or feedback is appreciated!</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+
+    </form>
+    </div>
+</body>
+</html>
